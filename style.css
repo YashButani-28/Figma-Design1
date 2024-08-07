@@ -1,0 +1,296 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+:root {
+    --main-text-color:#161639;
+    
+    }
+body{
+    /* max-width: 1440px; */
+    font-family: "Inter", sans-serif;
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+}
+
+.heading{
+    width: 100%;
+}
+
+/* header Start  */
+
+header{
+    /* position: relative; */
+    width: 100%;
+    height: 97px;
+
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+ }
+
+.logo img{
+    width: 170.08px;
+    height: 33px;
+    /* margin: 32px 0 0 120px; */
+}
+
+.navigations{
+    /* position: absolute; */
+    width: 684px;
+    height: 24px;
+}
+
+.navigations ul{
+    width: 100%;
+    display: flex;
+    /* margin: 36.5px 0 0 378px; */
+    gap: 32px;
+}
+
+.navigations ul li{
+    list-style-type: none;
+    line-height: 1.5rem;
+}
+
+.navigations ul li a{
+    text-decoration: none;
+    font-size: 1 rem;
+    color: var(--main-text-color);
+   
+}
+
+span>img{
+    height: 14px;
+    width: 14px;
+}
+
+/* Header Complete  */
+
+/* Hero section Begins  */
+.hero-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px 80px 0px;
+}
+.box-menu{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 336px;
+    gap:20px;
+}
+
+.box{
+width: 100%;
+height: 232px;
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+.box-title{
+    width: 100%;
+}
+
+.box-title h1{
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing:1px;
+    color: var(--main-text-color);
+
+
+}
+
+.box-description{
+    width: 90%;
+    height: 64px;
+}
+
+.box-description p{
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color:#50506A;
+    
+}
+
+.box-sponcers{
+    width:316px ;
+    height:56px ;
+    display: flex;
+    gap: 1rem;
+}
+.box-sponcers img{
+    width: 150px;
+    height: 56px;
+}
+
+.box-menu1{
+    position: relative;
+    width: 559px;
+    height: 609px;
+    margin-top: -50px;
+
+}
+
+.box-menu1 .main-image img{
+    width: 441px;
+    height: 521px;
+    z-index: 1; 
+}
+.green-image img{
+    position: absolute;
+    top: 300px;
+    left: -20px;
+    width: 167px;
+    height: 167px;
+    z-index: -1;
+}
+.yellow-image img{
+    position: absolute;
+    top: 15px;
+    left: 290px;
+    width: 39px;
+    height: 39px;
+}
+.box-frame img{
+    position: absolute;
+    bottom: 45px;
+    right: 75px;
+    width: 274px;
+    height: 170px;
+    z-index: 1;
+
+}
+.side-frame img{
+    position: absolute;
+   top: 120px;
+   left: -50px;
+    width: 225px;
+    height: 200px;
+    z-index: 2;
+}
+/* Hero section Ends  */
+
+/* Adverticement Begin */
+
+.Advertice{
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+}
+.Advertice-logos{
+    width: 89%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: 48px;
+    animation: AdverticeScroll 15s linear infinite;
+}
+.Advertice-logos img{
+   box-shadow: 3px 3px 5px rgb(46, 41, 41);
+   padding: 20px;
+}
+
+    @keyframes AdverticeScroll {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(110%);
+        }
+    }
+
+
+/* Adverticement End */
+
+/* Feature section */
+
+.feature-menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.feature-title-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.feature-title{
+    width: 440px;
+    height: 140px;
+}
+.feature-title h1{
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.feature-title p{
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+
+
+
+/* -------------- */
+
+/* promotions  */
+
+.promotion-box{
+    display: flex;
+    justify-content: center;
+}
+
+.promotion-box img{
+width: 80%;
+height: 430px;
+
+}
+
+/* promotions End */
+
+
+
+
+/* storage unit  */
+.storage-box{
+    display: flex;
+    justify-content: center;
+}
+
+.storage-box img{
+width: 100%;
+height: 550px;
+
+}
+
+/* storage unit End */
+
+
+
+
+
+
+
+
