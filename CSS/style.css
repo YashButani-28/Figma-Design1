@@ -1,0 +1,572 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-text-color: #161639;
+
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+
+
+/* header Start  */
+
+header {
+    width: 100%;
+    height: 97px;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.logo img {
+    width: 170.08px;
+    height: 33px;
+}
+
+.toggle{
+    display: none;
+}
+.navigations {
+    width: 684px;
+    height: 24px;
+}
+
+.navigations ul {
+    width: 100%;
+    display: flex;
+    gap: 32px;
+}
+
+.navigations ul li {
+    list-style-type: none;
+    line-height: 1.5rem;
+}
+
+.navigations ul li a:hover {
+    color: #686a73;
+}
+
+.navigations ul li a {
+    text-decoration: none;
+    font-size: 1 rem;
+    color: var(--main-text-color);
+
+}
+
+span>img {
+    height: 14px;
+    width: 14px;
+}
+
+/* Header Complete  */
+
+/* Hero section Begins  */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* margin: 40px 80px 0px; */
+}
+
+.box-menu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* height: 336px; */
+    gap: 20px;
+}
+
+.box {
+    width: 100%;
+    /* height: 232px; */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.box-title {
+    width: 100%;
+}
+
+.box-title h1 {
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: var(--main-text-color);
+}
+
+.box-description {
+    width: 90%;
+    /* height: 64px; */
+}
+
+.box-description p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #50506A;
+
+}
+
+.box-sponcers {
+    width: 316px;
+    height: 56px;
+    display: flex;
+    gap: 1rem;
+}
+
+.box-sponcers img {
+    width: 150px;
+    height: 56px;
+}
+
+.box-menu1 {
+    position: relative;
+    width: 30%;
+    margin-top: -50px;
+
+}
+
+.box-menu1 .main-image img {
+    width: 370px;
+    height: 450px;
+    z-index: 1;
+}
+
+.green-image img {
+    position: absolute;
+    top: 270px;
+    left: -20px;
+    width: 147px;
+    height: 147px;
+    z-index: -1;
+}
+
+.yellow-image img {
+    position: absolute;
+    top: 15px;
+    left: 290px;
+    width: 39px;
+    height: 39px;
+}
+
+.box-frame img {
+    position: absolute;
+    bottom: -65px;
+    right: -90px;
+    width: 300px;
+    height: 200px;
+    z-index: 1;
+
+}
+
+.side-frame img {
+    position: absolute;
+    top: 120px;
+    left: -50px;
+    width: 225px;
+    height: 200px;
+    z-index: 2;
+}
+
+/* Hero section Ends  */
+
+/* Adverticement Begin */
+
+.Advertice {
+    margin: 24px 0;
+    width: 100%;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.Advertice-logos {
+    width: 89%;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 48px;
+    animation: AdverticeScroll 20s linear infinite;
+}
+
+.Advertice-logos img {
+    padding: 20px;
+}
+
+@keyframes AdverticeScroll {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(110%);
+    }
+}
+
+
+/* Adverticement End */
+
+/* Feature section */
+
+.feature-menu,
+.customer-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-title-box,
+.customer-title-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.feature-title-box {
+    margin-top: 50px;
+
+}
+
+.feature-title,
+.customer-title {
+    width: 440px;
+    height: 140px;
+}
+
+.feature-title h1,
+.customer-title h1 {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.feature-title p,
+.customer-title p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* ---------------------  */
+
+.features-main-boxes {
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 480px; */
+}
+.feature-box-menu1 {
+    position: relative;
+    width: 40%;
+    /* height: 609px; */
+
+}
+
+ .feature-main-image img {
+    width: 300px;
+    height: 380px;
+    z-index: 0;
+}
+
+.box-frame-image img {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    width: 270px;
+    height: 186px;
+    z-index: 1;
+}
+
+.colorbox-image img {
+    position: absolute;
+    bottom: -85px;
+    left: 105px;
+    width: 249px;
+    height: 166px;
+    z-index: 1;
+}
+
+.whitebox-image img {
+    position: absolute;
+    bottom: 25px;
+    left: -100px;
+    width: 221px;
+    height: 221px;
+    z-index: 1;
+}
+
+.feature-specs-menu {
+    width: 40%;
+    /* height: 436px; */
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.feature-specs-details {
+    width: 100%;
+    display: flex;
+    gap: 24px;
+}
+
+.D-spaces img {
+    width: 48px;
+    height: 48px;
+}
+
+.D-spaces-specs {
+    width: 400px;
+    /* height: 100%; */
+}
+
+.D-spaces-specs h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.D-spaces-specs p {
+    font-size: 15px;
+}
+
+.features-main-boxes1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+.exportImage-image img{
+    position: absolute;
+    top: 12px;
+    right: 100px;
+    width: 280px;
+    height: 170px;
+    z-index: 2;
+}
+
+.storage-box-image img{
+    position: absolute;
+    bottom: -80px;
+    left: 115px;
+    width: 230px;
+    height: 180px;
+    z-index: 2;
+}
+.side-bar-image img{
+    position: absolute;
+    top: 134px;
+    left: -95px;
+    width: 230px;
+    height: 190px;
+    z-index: 2;
+}
+
+
+
+
+
+
+/* -------------- */
+
+/* promotions  */
+
+.promotion-box {
+    display: flex;
+    justify-content: center;
+}
+
+.promotion-box img {
+    width: 80%;
+    /* height: 430px; */
+    padding: 30px 0;
+
+}
+.promotion-box1{
+display: none;
+}
+
+/* promotions End */
+
+/* customer  */
+
+.grid-box {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 24px;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.managemen-services {
+    background-color: #c7cfe3;
+    gap: 5px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    /* height: 202px; */
+    border-radius: 10px;
+}
+
+.managemen-services img {
+    width: 43px;
+    height: 43px;
+}
+
+.managemen-services h1 {
+    font-size: 24px;
+}
+
+.managemen-services p {
+    font-size: 16px;
+
+}
+
+/* customer  Ends*/
+
+
+
+/* storage unit  */
+.storage-box {
+    display: flex;
+    justify-content: center;
+}
+
+.storage-box img {
+    width: 100%;
+
+}
+.storage-box1{
+    display: none;
+
+}
+
+/* storage unit End */
+
+/* footer  */
+
+.footer-enquiries {
+    background-color: #161639;
+    padding: 96px 120px;
+    width: 100%;
+    gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.liecence-sponsors {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.logo-footer img {
+    width: 179px;
+    height: 33px;
+}
+
+.liecence-sponsors p {
+    line-height: 25px;
+    color: white;
+}
+
+.footer-sponces {
+    display: flex;
+    gap: 14px;
+}
+
+.footer-sponces {
+    width: 134px;
+    height: 48px;
+}
+
+.companies-details {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.companies-details a {
+    text-decoration: none;
+    color: #9FA5C0;
+    font-size: 16px;
+}
+.companies-details a:hover {
+   color: white;
+}
+
+.company,
+.support,
+.uptoDate {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.company h1,
+.support h1,
+.uptoDate h1 {
+    color: white;
+    font-size: 20px;
+}
+
+.emailBar {
+    position: relative;
+
+}
+
+.enter-email {
+    position: relative;
+}
+
+.emailBar input {
+    background-color: #49494a;
+    padding: 7px;
+    border-radius: 7px;
+    border: none;
+}
+
+.email-arrow img {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 7px;
+    right: 8px;
+    z-index: 1;
+
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+/* footer Ends  */
